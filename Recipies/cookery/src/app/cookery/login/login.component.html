@@ -1,0 +1,41 @@
+<div class="user">
+
+    <div class="row">
+     <div class="col-3"></div>
+ 
+ 
+     <div class="col-6">
+         
+         <form>
+             <div class="mb-3">
+                 <label for="name" class="form-label"> <h4>Your Name</h4> </label>
+                 <input type="text"  #name class="form-control" id="name" >
+                 <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+               </div>
+             <div class="mb-3">
+               <label for="exampleInputEmail1" class="form-label"> <h4>Email address</h4> </label>
+               <input type="email" #email class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+               <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+             </div>
+             <div class="mb-3">
+               <label for="exampleInputPassword1" class="form-label"><h4>Password</h4></label>
+               <input type="password" #password class="form-control" id="exampleInputPassword1">
+             </div>
+             <div class="mb-3 form-check">
+               <input type="checkbox" class="form-check-input" id="exampleCheck1">
+               <label class="form-check-label" for="exampleCheck1">Check me out</label>
+             </div>
+             <button type="submit" (click)="login(name , email , password)" class="btn btn-primary">Submit</button>
+             <button type="submit" (click)="dash()" class="btn btn-primary">To Dash Board</button>
+           </form>
+ 
+     </div>
+ 
+ 
+ 
+     <div class="col-3"></div>
+    </div>
+ 
+ 
+ 
+ </div>

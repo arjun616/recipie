@@ -1,0 +1,15 @@
+[{
+  "_id": {
+    "$oid": "633fa832588a9c4708c422f1"
+  },
+  "name": "arjun",
+  "phone": {
+    "$numberLong": "8281760112"
+  },
+  "address": "  qwerty\n        ",
+  "email": "arjunkrishnadas4@gmail.com",
+  "type": "Brake_Fast",
+  "country": "NorthIndian",
+  "preparation": "  \n        dfdsgfhgfdhth",
+  "__v": 0
+}]

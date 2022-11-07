@@ -1,0 +1,60 @@
+<div class="register">
+    <form>  
+        <div class="container">  
+         <h1>Recipe Registration Form</h1>
+        <hr>  
+        <label> Name </label>   
+      <input  type="text" name="name"  #name placeholder= "Firstname" required />   
+     
+      
+    <label>   
+        Phone :  
+    </label>  
+       <input #phone type="text" name="phone" placeholder="phone no." required>   
+        
+     
+        
+        <label for="email"><b>Email</b></label>  
+         <input #email type="text" placeholder="Enter Email" name="email" required>  
+          
+         <label for="Recipie"><b>Name Of Your Recipie</b></label>  
+         <input #recipie type="text" placeholder="Enter Recipie" name="Recipie" required>  
+
+         <label for="Time"><b>Time Required for Cooking</b></label>  
+         <input #time type="text" placeholder="Enter Time" name="Time" required>  
+
+         <label for="Image"><b>Image Location</b></label>  
+         <input #image type="text" placeholder="Enter Time" name="Image" required>  
+             
+      <div>  
+        <label>   
+      Type :  
+      </label>   
+    <select id="type" #myselect >  
+      <option  value="Brake_Fast">Brake Fast</option>  
+      <option  value="lunch">Lunch</option>  
+      <option  value="dinner">Dinner</option>  
+      <option  value="snacks">Snacks</option>  
+      <option  value="coolDrinks">Cool Drinks</option>  
+      </select>  
+      </div>  
+      <div>  
+        <label>   
+        Country Special :  
+        </label>   
+      <select id="contry" #country>  
+        <option value="NorthIndian">North Indian</option>  
+        <option value="SouthIndian">South Indian</option>  
+        <option value="Chineese">Chineese</option>  
+        <option value="Korean">Korean</option>  
+        </select>  
+        </div>  
+        Preparation 
+        <textarea #preparation cols="80" rows="5" placeholder="Current Address" value="address" required>  
+        </textarea>  
+     
+     
+        <button type="submit" class="registerbtn" (click)="register(name , phone , email , recipie , time , image , myselect , country , preparation  )">Register</button>
+        
+    
+</div>
